@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- add a title (a) -->
+<title>My shopping cart</title>
+
+<link rel="stylesheet" href="styles/Styles.css">
+
+<script src = "JS/MyScript.js"></script>
+
+<!--Display the system date as a text in the top of the web page-->
+<script>
+document.write(Date());
+</script>
+
+</head>
+<body>
+
+<!-- add a logo (b) -->
+<img src="image/logo.jpg" alt="logo" class="logo">
+
+
+<!-- add a header (c)-->
+<center>
+<h2>Shopping cart</h2>
+
+<!-- add a sub-header (c) -->
+<h3 id="sub">The online shopping store</h3>
+</center>
+
+<!-- add a horizontal line (d)-->
+<hr style="border:1px solid black;">
+
+<!-- add a horizontal menu (e) -->
+<ul class="menu">
+<li class="menuitem"><a href="https://www.youtube.com/" target="_blank">Home</a></li>
+<li class="menuitem"><a href="#">News</a></li>
+<li class="menuitem"><a href="#"><a href="#">Contact</a></li>
+<li class="menuitem"><a href="#">About</a></li>
+</ul>
+
+
+<!--If/else conditional statements
+• Create multiple buttons (at least 3) by product names in news.html.
+• Create a function named loadData() inside myScript.js. add a string
+parameter into that.
+Ex – loadData(data)
+• Send the name of the button when clicking that button into the above created
+function.
+• Inside loadData(), check whether which button has clicked using if else
+statement.
+• And display an image and text according to the selected button.-->
+
+<button class = "bttn1" type = "button" id = "btn1" onclick = "loadData('btn1')">Iphone</button>
+<button class = "bttn1" type = "button" id = "btn2" onclick = "loadData('btn2')">Nokia</button>
+<button class = "bttn1" type = "button" id = "btn3" onclick = "loadData('btn3')">Nokia</button>
+<button class = "bttn1" type = "button" id = "btn4" onclick = "loadData('btn4')">Oppo </button>
+
+<!--• Create a button named “average Price” in news.html.
+• Create a function called priceForLoop() in myScript.js.
+• Create an array with product name and price in the function.
+Ex – [“product X - $100”, “product Y - $200”]-->
+<button class = "bttn1" type = "button" id = "btn5" onclick = "priceForLoop('btn5')">Average price </button>
+
+<!--Redo the above function using a for-in loop and name the function as
+“productForInLoop()”-->
+<button class = "bttn1" type = "button" id = "priceforin" onclick = "priceforInLoop()">Price for In</button>
+
+<button class = "bttn1" type = "button" id = "priceHigher" onclick = "priceHigher()">Price higher than 1000</button>
+
+<!--• Create a button named “Prices lower than 1000”.
+• Create a function named “priceLower()” in the myScript.js file.
+• Call that function when the button click event.
+Copy and paste the array which has created in the above exercise.
+• Display the array elements which have the prices lower than 1000-->
+<button class = "bttn1" type = "button" id = "priceLower" onclick = "priceLower()">Price less than 1000</button>
+
+<center>
+
+<img id = "image1" src = "image/Item/mobile1.jfif"></img>
+
+<p id = "para" class = "text1">Introduced in September 2024,
+  the iPhone 16 and iPhone 16 Plus are Apple's current flagship phones, sold alongside the higher-end iPhone 
+  16 Pro and iPhone 16 Pro Max.
+
+  The iPhone 16 and iPhone 16 Plus are the right iPhones for most people, and now is a good time to buy. There's 
+  an upgraded A18 chip that supports Apple Intelligence, a dual-lens camera system that takes great photos, a Camera 
+  Control button for quick camera access, and a customizable Action button.
+  
+  </p>
+
+</center>
+<!-- add a horizontal line (d)-->
+ <hr>
+<!-- add a footer (g)-->
+<footer>
+  <p>created by Dilshan Rajapakshe</p>
+  <a href="https://courseweb.sliit.lk">Visit to our course</a>
+ </footer>
+</body>
+</html>

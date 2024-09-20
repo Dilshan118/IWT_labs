@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- add a title (a) -->
+<title>My shopping cart</title>
+
+<link rel="stylesheet" href="styles/Styles.css">
+</head>
+<body>
+
+<!-- add a logo (b) -->
+<img src="image/logo.jpg" alt="logo" class="logo">
+
+
+<!-- add a header (c)-->
+<center>
+<h2>Shopping cart</h2>
+
+<!-- add a sub-header (c) -->
+<h3 id="sub">The online shopping store</h3>
+</center>
+
+<!-- add a horizontal line (d)-->
+<hr style="border:1px solid black;">
+
+<!-- add a horizontal menu (e) -->
+<ul class="menu">
+<li class="menuitem"><a href="https://www.youtube.com/" target="_blank">Home</a></li>
+<li class="menuitem"><a href="news.html" target ="_blank">News</a></li>
+<li class="menuitem"><a href="register.html" target="_blank">Contact</a></li>   <!--link to the registation page-->
+<li class="menuitem"><a href="#">About</a></li>
+</ul>
+<br>
+
+<!--Add a header named “Registration Form”-->
+<h3>Registration Form</h3>
+
+ <!--Create a form -->
+<div id="div1">
+  <form>
+    <!--First Name Field-->
+    <br>
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" required> <!--this 'required' eliment make this field mandatory to fill-->
+    <br><br>
+
+    <!--Last Name Field-->
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lasttname" required>
+    <br><br>
+
+    <!--Gender
+Should add two radio buttons named “Male” and “Female”. Only one button should
+be able to select.-->
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gendergroup" required>Male <!--the name must be same in the selection radio button if they are in same group*/-->
+    <input type="radio" id="female" name="gendergroup" required>Female
+    <br><br>
+
+    <!--Mobile Number
+Length of the field should be 10. A warning should display, when submitting the
+wrong input values into the field.-->
+    <label for="mobile">Phone Number:</label><br>
+    <input type="text" id="mobile" required pattern="[0-9]{10}" placeholder="071xxxxxxx"> <!--this 'pattern' attribute means, 0-9 didits and lenth should be 10-->
+    <br><br><!--And the 'placeholder ' attributes display the demo input to the user(display the reqired pattern)-->
+
+    <!--E-mail
+A warning should display, when submitting the form without a proper email format
+in the email input field-->
+    <label for="mail">Email:</label><br>
+    <input type="email" id="male" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" placeholder="abc@gmail.com"> <!--check the proper email format
+    in the email input field.-->
+    <br><br>
+
+    <!--Address
+It should be a text are which have multiple rows.-->
+    <lable for="address">Address:</lable><br>
+    <textarea id="address" rows="4" cols="40" required></textarea>
+    <br><br>
+
+    <!--date of birth-->
+    <label for="birthday">Birth Day:</label><br>
+    <input type="date" id="birthday" required>
+    <br><br>
+
+    <!--Password-->
+    <lable for="password">Password:</lable><br>
+    <input type="password" id="pwd">
+    <br><br>
+
+    <!--confirm Password-->
+    <lable for="confirmpassword">Confirm Password:</lable><br>
+    <input type="password" id="cnf_pwd" required>
+    <br><br>
+  
+    <input type="checkbox" id="chk_accept" required>
+    <label for="policy">Accept privacy policy and terms</label>
+    <br>
+    <br>
+
+    <input type="submit" id="btn_submit" value="SUBMIT" required>
+    <br><br>
+
+  </form>
+
+</div>
+
+<!-- add a horizontal line (d)-->
+<hr>
+
+<!-- add a footer (g)-->
+ <footer>
+  <p>created by Dilshan Rajapakshe</p>
+  <a href="https://courseweb.sliit.lk">Visit to our course</a>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+	background-image: url("../image/BI.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logo{
+	display:block;
+	margin:auto;
+}
+h2{
+	font-size:50px;
+	font-color:white;
+}
+h3{
+	text-align: center;
+}
+#sub{
+	color:white;
+	font-size:30px;
+	font-style:italic;
+}
+.menu{
+	list-style-type:none;
+}
+.menu li{
+	display:inline;
+}
+.productData{
+	background-color:white;
+}
+#des{
+	text-align:left;
+	color:red;
+}
+li.menuitem a:hover{
+	background-color : white;
+	font-family:arial;
+	font-size:24px;
+}
+.bttn1{
+	margin: 8px 4px 4px 4px;
+	width: 20%;
+	height:50px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 20px;
+	border-color:white;
+	color:white;
+}
+input[type= "text"],[type="email"], [type="date"] 
+{
+	width: 35%;
+	text-align: left;
+}
+
+#div1{
+	/*text-align: center;*/
+	background-color: gray;
+}
